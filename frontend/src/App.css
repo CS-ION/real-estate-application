@@ -388,7 +388,8 @@ textarea::placeholder {
 }
 
 .update,
-.delete {
+.delete,
+.request-viewing {
   border: 2px solid rgb(176, 64, 94);
   font-family: "Coiny", sans-serif;
   line-height: 1;
@@ -404,8 +405,20 @@ textarea::placeholder {
   transition: 0.3s;
 }
 
+.request-viewing {
+  padding: 5px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(230, 205, 106),
+    rgb(255, 165, 0),
+    rgb(255, 204, 0),
+    rgba(128, 120, 105, 0.374)
+  );
+}
+
 .update:hover,
-.delete:hover {
+.delete:hover,
+.request-viewing:hover {
   transform: scale(1.05);
 }
 
