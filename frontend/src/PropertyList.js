@@ -62,8 +62,8 @@ function Property({
   setShowForm,
   setPropertyToBeUpdated,
 }) {
-  const handleDelete = (propertyId) => {
-    alert("Deleted Property with ID " + propertyId);
+  const handleDelete = () => {
+    alert("Deleted Property with ID " + id);
     /* WILL IMPLEMENT WHEN INTEGRATED WITH BACKEND
     // Send a delete request to the backend
     fetch(`/api/properties/${propertyId}`, {
@@ -146,7 +146,7 @@ function Property({
         <button className="update" onClick={handleUpdate}>
           Update
         </button>
-        <button className="delete" onClick={() => handleDelete(id)}>
+        <button className="delete" onClick={handleDelete}>
           Delete
         </button>
         <button className="request-viewing" onClick={handleRequestViewing}>
