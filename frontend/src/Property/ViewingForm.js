@@ -20,7 +20,7 @@ const ViewingForm = ({ setViewForm }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Integrate with API
+    // Integrate with API backend
 
     const errors = {};
 
