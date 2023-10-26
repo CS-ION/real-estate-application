@@ -17,7 +17,7 @@ function App() {
           {/* Add more navigation items here */}
         </ul>
       </nav>
-      {alert(API_KEY)}
+      <h1>Hello</h1>
       <Routes>
         <Route path="Property" element={<Property />} />
         <Route path="Broker" element={<Broker />} />
