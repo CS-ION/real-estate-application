@@ -4,6 +4,7 @@ import Broker from "./Broker/Broker";
 import "./App.css";
 
 function App() {
+  const apiKey = process.env.API_URL;
   return (
     <div className="app-container">
       <nav className="navbar">
@@ -17,7 +18,7 @@ function App() {
           {/* Add more navigation items here */}
         </ul>
       </nav>
-      <h1>{process.env.API_KEY}</h1>
+      {console.log("HEHEHE" + apiKey)}
       <Routes>
         <Route path="Property" element={<Property />} />
         <Route path="Broker" element={<Broker />} />
