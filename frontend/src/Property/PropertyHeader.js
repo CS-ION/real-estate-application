@@ -13,7 +13,7 @@ const PropertyHeader = ({
   return (
     <div className="property-listing-header">
       <div className="property-listing-header-contents">
-        <h1 className="property-listings">PROPERTY LISTINGS {API_URL}</h1>
+        <h1 className="property-listings">PROPERTY LISTINGS</h1>
         <button
           className="showForm"
           onClick={() => {
